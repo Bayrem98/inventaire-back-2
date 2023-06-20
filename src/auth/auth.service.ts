@@ -73,7 +73,9 @@ export class AuthService {
       };
     } else {
       console.log('mot de passe errone');
-      throw new ConflictException('please entre username && password correct');
+      throw new ConflictException(
+        `Veuillez entrer le nom d'utilisateur et le mot de passe corrects`,
+      );
     }
   }
 }
