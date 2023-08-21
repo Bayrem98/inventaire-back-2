@@ -39,13 +39,13 @@ export class ArticleController {
     return this.articleService.create(createArticleDto);
   }
 
-  @Put(':id')
+  /* @Put(':id')
   update(
     @Param('id') id: string,
     @Body() updateArticleDto: UpdateArticleDto,
   ): Promise<Article> {
     return this.articleService.update(id, updateArticleDto);
-  }
+  } */
 
   @Patch(':id/:sub_art')
   async updateSub(
